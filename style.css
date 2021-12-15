@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    background-color: hsl(244, 38%, 16%);
+    
+}
+.imagen{
+    position: relative;
+}
+
+/*******
+texto
+********/
+body{
+    color: hsla(0, 0%, 100%, 0.4);
+    font-size: 15px;
+}
+.info{
+    text-align: center;
+}
+.titulos{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+.main-t{
+    font-weight: 700;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.5em;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+#p-titulo{
+    color: hsla(0, 0%, 100%, 0.4);
+}
+.estadisticas{
+    text-transform: uppercase;
+}
+.estadisticas>p{
+    font-size: .65rem;
+}
+@media(min-width: 375px){
+    .titulos{
+        font-size: 1rem;
+    }
+    .main-t{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+/***********
+imagen
+************/
+.imagen{
+    min-height: 30vh;
+    background: linear-gradient(hsl(277, 64%, 61%,.50), hsl(277, 64%, 61%, .50)),url('/images/image-header-mobile.jpg');
+    background-size: cover;
+
+    
+
+}
+
+/***********
+layout
+************/
+main{
+    width: 90%;
+    max-width: 1440px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.info{
+    padding: 1em;
+}
+
+.info, .main-t{
+    padding-bottom: .7em;
+}
+.titulo-principal{
+    padding-bottom: 1.8em;
+}
+.estadisticas{
+    padding-bottom: 1.5em;
+}
+.estadisticas>.titulos{
+    padding-bottom: .3em;
+}
+@media(min-width: 375px){
+    main{
+        flex-direction: row;
+        max-height: 60vh;
+    }
+    .imagen{
+        min-width: 50%;
+    }
+    .info{
+        
+        text-align: left;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .titulo-principal{
+        margin-bottom: 3em;
+        width: 80%;
+        align-self: center;
+    
+    }
+    .wrap-estadisticas{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        align-self: center;
+    }
+ 
+    
+}
